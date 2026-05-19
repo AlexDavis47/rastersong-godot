@@ -1,3 +1,0 @@
-[submodule "rastersong-backend"]
-	path = rastersong-backend
-	url = git@github.com:godotengine/godot-cpp-template.git
