@@ -23,7 +23,7 @@ CMakeCache.txt
 /godot/addons/rastersong/
 
 # Third-party libraries
-/core/thirdparty/ffmpeg/
+/gde/thirdparty/ffmpeg/
 _deps/
 
 # IDE and editor files
