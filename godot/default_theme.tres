@@ -1,0 +1,45 @@
+[gd_resource type="Theme" format=3 uid="uid://bkrf2gyuj01vt"]
+
+[sub_resource type="DPITexture" id="DPITexture_ig7tw"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"8\" height=\"48\"><path fill=\"gray\" fill-opacity=\".65\" d=\"M3.15 4v40h1.7V4z\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_0xm2m"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"60\"><rect width=\"28\" height=\"58\" x=\"1\" y=\"1\" fill=\"#e0e0e0\" fill-opacity=\".6\" stroke=\"#000\" stroke-width=\".8\" rx=\"7\"/></svg>
+"
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h2yge"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+
+[sub_resource type="DPITexture" id="DPITexture_1bvp3"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"8\"><path fill=\"none\" stroke=\"gray\" stroke-opacity=\".65\" stroke-width=\"1.7\" d=\"M4 4h40\"/></svg>
+"
+
+[sub_resource type="DPITexture" id="DPITexture_lquwl"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"60\" height=\"30\"><rect width=\"58\" height=\"28\" x=\"1\" y=\"1\" fill=\"#e0e0e0\" fill-opacity=\".6\" stroke=\"#000\" stroke-width=\".8\" rx=\"7\"/></svg>
+"
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7mycd"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+
+[resource]
+HBoxContainer/constants/separation = 8
+HSplitContainer/constants/autohide = 1
+HSplitContainer/constants/minimum_grab_thickness = 6
+HSplitContainer/constants/separation = 4
+HSplitContainer/icons/grabber = SubResource("DPITexture_ig7tw")
+HSplitContainer/icons/touch_dragger = SubResource("DPITexture_0xm2m")
+HSplitContainer/styles/split_bar_background = SubResource("StyleBoxEmpty_h2yge")
+VBoxContainer/constants/separation = 8
+VSplitContainer/constants/autohide = 1
+VSplitContainer/constants/minimum_grab_thickness = 6
+VSplitContainer/constants/separation = 4
+VSplitContainer/icons/grabber = SubResource("DPITexture_1bvp3")
+VSplitContainer/icons/touch_dragger = SubResource("DPITexture_lquwl")
+VSplitContainer/styles/split_bar_background = SubResource("StyleBoxEmpty_7mycd")
