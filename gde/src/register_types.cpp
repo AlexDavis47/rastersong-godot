@@ -7,6 +7,7 @@
 #include <godot_cpp/godot.hpp>
 
 #include "ffmpeg_tester.h"
+#include "video_decoder.h"
 
 using namespace godot;
 
@@ -18,6 +19,7 @@ void initialize_library_modules(ModuleInitializationLevel p_level)
   }
 
   GDREGISTER_CLASS(FFmpegTester);
+  GDREGISTER_CLASS(VideoDecoder);
 }
 
 void unitialize_library_modules(ModuleInitializationLevel p_level)

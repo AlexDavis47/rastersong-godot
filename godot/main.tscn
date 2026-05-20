@@ -3,7 +3,7 @@
 [ext_resource type="Theme" uid="uid://bkrf2gyuj01vt" path="res://default_theme.tres" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://uuvd2awadbyr" path="res://main.gd" id="1_ig7tw"]
 
-[node name="Main" type="Control" unique_id=1503373588]
+[node name="Main" type="Control" unique_id=1503373588 node_paths=PackedStringArray("texture_rect")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,6 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_0xm2m")
 script = ExtResource("1_ig7tw")
+texture_rect = NodePath("TextureRect")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1850670490]
 layout_mode = 1
@@ -72,7 +73,6 @@ size_flags_vertical = 3
 
 [node name="GraphNode" type="GraphEdit" parent="VBoxContainer/VSplitContainer/Panel/NodeGraphPanel" unique_id=1602970842]
 layout_mode = 2
-scroll_offset = Vector2(0, -6)
 
 [node name="TimelinePanel" type="PanelContainer" parent="VBoxContainer/VSplitContainer" unique_id=1798949352]
 layout_mode = 2
@@ -80,3 +80,8 @@ size_flags_vertical = 3
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/VSplitContainer/TimelinePanel" unique_id=994536154]
 layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=306984904]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
