@@ -1,6 +1,47 @@
-# Godot 4+ specific ignores
-.godot/
-/android/
+# Build directories and outputs
+/build/
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.exe
+*.so
+*.dylib
+*.a.a
 
-# Skip the built gdextension
-/addons/rastersong/
+# CMake generated files
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+*.cmake
+!CMakeLists.txt
+
+# Godot 4+ specific ignores
+/godot/.godot/
+/godot/android/
+/godot/addons/rastersong/
+
+# Third-party libraries
+/core/thirdparty/ffmpeg/
+_deps/
+
+# IDE and editor files
+.vscode/
+.vs/
+.idea/
+*.vcxproj.user
+*.sln.user
+*.user
+
+# OS specific files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.~
+
+# Temporary files
+*.tmp
+*.log

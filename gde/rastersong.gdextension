@@ -1,0 +1,21 @@
+[configuration]
+
+entry_symbol = "library_init"
+compatibility_minimum = "4.1"
+
+[libraries]
+
+windows.debug.x86_32 = "res://addons/rastersong/bin/windows/rastersong.windows.template_debug.x86_32.dll"
+windows.release.x86_32 = "res://addons/rastersong/bin/windows/rastersong.windows.template_release.x86_32.dll"
+windows.debug.x86_64 = "res://addons/rastersong/bin/windows/rastersong.windows.template_debug.x86_64.dll"
+windows.release.x86_64 = "res://addons/rastersong/bin/windows/rastersong.windows.template_release.x86_64.dll"
+windows.debug.arm64 = "res://addons/rastersong/bin/windows/rastersong.windows.template_debug.arm64.dll"
+windows.release.arm64 = "res://addons/rastersong/bin/windows/rastersong.windows.template_release.arm64.dll"
+
+[dependencies]
+ios.debug = {
+  "res://addons/rastersong/bin/ios/libgodot-cpp.ios.template_debug.xcframework": ""
+}
+ios.release = {
+  "res://addons/rastersong/bin/ios/libgodot-cpp.ios.template_release.xcframework": ""
+}
