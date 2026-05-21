@@ -8,6 +8,9 @@
 
 #include "ffmpeg_tester.h"
 #include "video_decoder.h"
+#include "clip.h"
+#include "video_clip.h"
+#include "audio_clip.h"
 
 using namespace godot;
 
@@ -20,6 +23,9 @@ void initialize_library_modules(ModuleInitializationLevel p_level)
 
   GDREGISTER_CLASS(FFmpegTester);
   GDREGISTER_CLASS(VideoDecoder);
+  GDREGISTER_CLASS(Clip);
+  GDREGISTER_CLASS(VideoClip);
+  GDREGISTER_CLASS(AudioClip);
 }
 
 void unitialize_library_modules(ModuleInitializationLevel p_level)

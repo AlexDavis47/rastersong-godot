@@ -8,6 +8,9 @@ var current_frame_index = 0
 var image = Image.new()
 var texture = ImageTexture.new()
 
+var fps = 30.0 # Target frames per second for playback
+var frame_timer = 0.0
+
 func _ready() -> void:
 	# Test FFmpeg availability
 	var test = FFmpegTester.new()
@@ -38,6 +41,12 @@ func _process(delta: float) -> void:
 	if not video_playing:
 		return
 	
+	if frame_timer < 1.0 / fps:
+		frame_timer += delta
+		return
+	else:
+		frame_timer = 0.0
+
 	# Decode the current frame
 	var frame = dec.decode_frame(current_frame_index)
 	if frame and frame.size() > 0:
