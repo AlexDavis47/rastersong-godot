@@ -1,4 +1,4 @@
-#include "video_decoder.h"
+#include "video_decoder.hpp"
 
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/variant/utility_functions.hpp>

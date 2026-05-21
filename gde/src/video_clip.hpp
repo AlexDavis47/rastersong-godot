@@ -1,7 +1,7 @@
 #ifndef RASTERSONG_VIDEO_CLIP_H
 #define RASTERSONG_VIDEO_CLIP_H
 
-#include "clip.h"
+#include "clip.hpp"
 
 namespace godot
 {

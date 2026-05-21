@@ -1,4 +1,4 @@
-#include "ffmpeg_tester.h"
+#include "ffmpeg_tester.hpp"
 
 extern "C"
 {

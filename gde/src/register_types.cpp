@@ -1,4 +1,4 @@
-#include "register_types.h"
+#include "register_types.hpp"
 
 #include <gdextension_interface.h>
 
@@ -6,11 +6,11 @@
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
 
-#include "ffmpeg_tester.h"
-#include "video_decoder.h"
-#include "clip.h"
-#include "video_clip.h"
-#include "audio_clip.h"
+#include "ffmpeg_tester.hpp"
+#include "video_decoder.hpp"
+#include "clip.hpp"
+#include "video_clip.hpp"
+#include "audio_clip.hpp"
 
 using namespace godot;
 
